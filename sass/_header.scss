@@ -1,0 +1,40 @@
+.box {
+    padding: 50px 0;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    @include sp {
+        flex-direction: column;
+    }
+    &__item {
+        position: relative;
+        flex-basis: calc((100% - 100px)/3);
+        margin: 0 50px 50px 0;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        @include sp {
+            margin: 0 30px 50px 30px;
+        }
+        &:nth-child(3n) {
+            margin-right: 0;
+            @include sp {
+                margin-right: 30px;
+            }
+        }
+        span {
+            position: absolute;
+            top: -20px;
+            left: -25px;
+            background-color: burlywood;
+            padding: 15px;
+            color: #fff;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.5;
+        }
+    }
+}
