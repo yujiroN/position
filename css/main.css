@@ -64,64 +64,7 @@ img {
   vertical-align: bottom;
 }
 
-.box {
-  padding: 50px 0;
-  max-width: 1000px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media screen and (max-width: 800px) {
-  .box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-.box__item {
-  position: relative;
-  -ms-flex-preferred-size: calc((100% - 100px)/3);
-      flex-basis: calc((100% - 100px)/3);
-  margin: 0 50px 50px 0;
-  padding: 20px;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
-@media screen and (max-width: 800px) {
-  .box__item {
-    margin: 0 30px 50px 30px;
-  }
-}
-
-.box__item:nth-child(3n) {
-  margin-right: 0;
-}
-
-@media screen and (max-width: 800px) {
-  .box__item:nth-child(3n) {
-    margin-right: 30px;
-  }
-}
-
-.box__item span {
-  position: absolute;
-  top: -20px;
-  left: -25px;
-  background-color: burlywood;
-  padding: 15px;
-  color: #fff;
-}
-
-.box__item h2 {
-  margin-bottom: 20px;
-}
-
-.box__item p {
-  line-height: 1.5;
+.title {
+  color: red;
 }
 /*# sourceMappingURL=main.css.map */
